@@ -1,0 +1,265 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #606C5D;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+nav ul li a:hover {
+    background-color: #F1C376;
+    color: #F1C376;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+article {
+    flex: 2;
+}
+
+.article #intro {
+    background-color: #F7F1E5;
+}
+
+h1 strong {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Atur parameter bayangan sesuai keinginan */
+}
+
+h2 strong {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Atur parameter bayangan sesuai keinginan */
+}
+
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro img {
+    width: 40%;
+    height: auto;
+}
+
+aside {
+    flex: 1;
+}
+
+aside img {
+    padding: 20px;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #99A98F;
+    padding: 50px;
+    color: text-dark;
+}
+
+.container-fluid article {
+    flex: 1;
+    /* Menyusun elemen article secara fleksibel */
+    padding: 10px;
+    text-align: center;
+}
+
+.container-fluid aside {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.container.education {
+    justify-content: center;
+    align-items: center;
+    /* Anda dapat menyesuaikan tinggi sesuai preferensi */
+}
+
+.container.education article,
+.container.education aside {
+    text-align: center;
+    /* Agar teks di dalamnya rata tengah secara horizontal */
+    padding: 20px;
+}
+
+.container.education aside  .card-body{
+    border-color: #E7B10A;
+}
+
+aside .btn-custom {
+    background-color: #E7B10A;
+    color: #333;
+    border-radius: 100px;
+}
+
+aside .card .card-body{
+    background-color: #99A98F;
+}
+
+aside .col{
+    margin: 20px;
+}
+
+.container.services article{
+    border-radius: 15px 15px 0 0;
+}
+
+.container.services aside {
+    border-radius: 0 0 15px 15px;
+}
+
+.container.services article,
+.container.services aside {
+    text-align: center;
+    /* Agar teks di dalamnya rata tengah secara horizontal */
+    padding: 20px;
+    text-decoration: none;
+    font-size: small;
+    background-color: #99A98F;
+}
+
+.container.services aside .card {
+    border-color: #E7B10A;
+    border-width: 5px;
+}
+
+.container.services aside .card-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container.services aside .card-body .pentolgila {
+    text-decoration: none;
+}
+
+.container.services img{
+    width: 100%;
+    height : 100%;
+}
+
+.container.skill article{
+    margin: 40px 0 50px;
+    text-align: center;
+}
+.container.skill aside {
+    background-color: #99A98F;
+    padding: 50px;
+    border-radius: 15px 15px 15px 15px;
+    
+}
+.container.skill .progress {
+    margin: 20px;
+    height: 30px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.container.skill button {
+    border-radius: 15px 15px 15px 15px;
+    background-color: #606C5D;
+    color: #F7F1E5;
+    justify-content: center;
+    width: 25%;
+}
+
+.container.skill .progress .progress-bar{
+    background-color: #E7B10A;
+    
+}
+
+.container.contact article {
+    margin: 40px 0 50px;
+    text-align: center;
+}
+
+.container.contact aside .col {
+    margin: 40px 0 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.container.contact aside a {
+    text-decoration: none;
+    color: #333;
+}
+
+.moving-icon {
+            transition: transform 0.3s ease-in-out;
+            shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Efek perubahan transformasi saat kursor melewati ikon */
+        .moving-icon:hover {
+            transform: translateX(10px); /* Ganti nilai X sesuai preferensi Anda */
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+footer {
+    background-color: #606C5D;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
